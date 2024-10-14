@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Application</h1>
+    <p>Browse products and submit your reviews!</p>
+  </header>
+
+  <main>
+    <!-- Product List Section -->
+    <section id="product-section">
+      <h2>Available Products</h2>
+      <div id="productList"></div>
+    </section>
+
+    <!-- Review Submission Section -->
+    <section id="review-section">
+      <h2>Submit Your Review</h2>
+      <form id="reviewForm">
+        <div class="Rform">
+          <label for="productSelect">Product:</label>
+          <select id="productSelect" name="productSelect"></select>
+        </div>
+
+        <div class="Rform">
+          <label for="reviewText">Your Review:</label>
+          <textarea id="reviewText" name="reviewText" rows="4" placeholder="Write your review here..." required></textarea>
+        </div>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
